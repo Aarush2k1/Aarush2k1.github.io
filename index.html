@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honest schoolFinder</title>
+    <script src="https://js.cx/libs/animate.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="html" href="register.html">
+    <link rel="html" href="Site.html">
+    <link rel="html" href="Lists.html">   
+    
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navLeft">
+        <img src="images/5.jpg" height="65">
+        </div>
+          <div class="navRight">
+          <a href="index.html">Dashboard</a>
+          <a href="#">Schools</a>
+            <div class="dropdown">
+              <button class="dropbtn">Careers</button>
+              <div class="dropdown-content">
+              <a href="#">Find</a>
+              <a href="#">Companies</a>
+              <a href="#">Quiz</a>
+              </div>
+            </div>          
+          <a href="#">About us</a> 
+          </div>
+      </div>
+        <marquee loop="-1"scrollamount="5" width="100%" style="font-size: large;"> Awesome updates</marquee> 
+    </header>
+            
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/9.jpg" style="width:100%" height="550">
+      </div>    
+      <div class="mySlides fade">
+        <img src="images/10.jpg" style="width:100%" height="550">        
+      </div>    
+      <div class="mySlides fade">
+        <img src="images/11.jpg" style="width:100%" height="550">        
+      </div>
+      <div class="mySlides fade">
+        <img src="images/8.jpg" style="width:100%" height="550">        
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>   
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    
+      <div class="Heading">      
+       <h2>Welcome to Find your School</h2>
+       <p>Right place to find Schools in your locality</p>
+       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Schools..">  
+      </div>
+
+    <div class="Content">
+        <div class="btn-wrapper">  
+          <a href="index.html" class="btn start">Get started</a>
+            <p>or</p>
+          <a href="register.html" class="btn signup">Already a Member</a>
+        </div>
+        <div class="city">
+          <label class="cityStyle" for="city">Skip and select a city and press select:</label>
+          <select class="cityOption" id="city" name="cities">
+          <option value="Patiala">Bombay</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          </select>
+          <p><a class="citySelect" href="Lists.html">Select</a></p>          
+        </div>
+    </div>
+    <div class="Load">                 
+      <div  id="path">
+       <div id="brick">Click Me</div>
+      </div>
+    </div>
+
+    <div class="info">
+      <ul>
+        <li>10000
+          <p>Random number</p>
+        </li>
+        <li>2000
+          <p>Another one</p>
+        </li>
+        <li>50000
+          <p>Last one</p>
+        </li>
+      </ul>
+      <p>These are for making our wwebsite feel atttractive. Don't go on my styling</p>
+
+    </div>
+
+      <div class="img">
+          <div class="eventLeft">   
+            
+          </div>
+          <div class="eventRight">
+
+          </div>
+      </div>
+      <footer class="footer-distributed">
+ 
+        <div class="footer-left">
+          <h3>schoolFind</h3>
+          <p class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </p>   
+          <p class="footer-company-name">© 2020 All Rights Reserved</p>
+        </div>
+   
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>Write to us then we will give you adress</span>
+              Obviously in Mumbai</p>
+          </div>   
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 9876543210</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">support@Honesty.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            We provide a platform for people (Students,parents) who are new in there city, to find schools, centers.</p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    
+
+    <div class="open-button" >Feedback
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Feedback Form</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>    
+        <label for="msg"><b>Message</b></label>
+        <textarea type="message" placeholder="Enter message" name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
