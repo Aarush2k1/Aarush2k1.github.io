@@ -150,7 +150,7 @@ header{
 
 .Heading {
   padding:100px 80px 0px 80px;
-  height: 400px;
+  height: 300px;
   opacity: 0.7;
   background-image: url(images/7.jpg);
   background-attachment: fixed;
@@ -165,40 +165,50 @@ header{
 .Heading p{
   float:right;
   font-size: 25px;
-  background-color:white;
+  background-color:rgb(211, 142, 142);
   font-family: sans-serif;
   font-weight: 900;
 }
-
 .Content{
   text-align:center;
   padding: 15px;
-  height:400px;
-  background-color:rgb(112, 59, 59);
+  height:700px;
+  background-image: url(images/3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
+
 .btn-wrapper {
   margin: 20px 0;
 }
 .btn-wrapper p {
   margin: 10px 0;
+  align-items:center;
+}
+.btn::after{
+  float:left;
 }
 .start{
   background-color: #239b76;
   font-size: 28px;
+  margin-left:300px;
+  float:left;  
 }
 .signup{
   background-color: #55acee;
   font-size:28px;
   margin-right: 10px;
+  float:right;
+
 }
 .btn {
   padding: 20px 40px;
   color:whitesmoke;
   display: inline-block;
-  opacity: 0.8;
   border-radius: 4px;
   text-align: center;
 }
+
 .btn:hover {
   opacity: 1;
   color:rgb(236, 165, 33);
@@ -211,6 +221,7 @@ header{
   opacity: 0.8;
   border-radius: 4px;
   text-align: center;
+  margin:50px;
 }
 .citySelect{
   padding: 10px 20px;
@@ -232,6 +243,10 @@ header{
 .citySelect:hover {
   opacity: 1;
   color:rgb(236, 165, 33);
+}
+.search{
+  margin:60px;
+  font-size: 30px;
 }
 .Load{
   padding:20px 0 px 20px 0px;
@@ -256,7 +271,7 @@ header{
 .info{
   padding:50px 80px;
   height: 200px;
-  background:rgb(194, 110, 110);
+  background:rgb(255, 255, 255);
 }
 li{
   padding:20px 50px 20px 50px;
@@ -265,14 +280,38 @@ li{
   float:left;
   font-size:30px;  
 }
-.img{
+.events{
   padding:50px 10px 50px 10px;
-  height:300px;
+  max-height:800px;
+  
   background-attachment: fixed;
   background-image:url(images/2.jpg);
   background-size:cover;
+  opacity:0.8;
 }
 
+.events:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+.event{
+  float:left;
+}
+.Left{
+ height:700px;
+ width:400px;
+ background-color: #717171;
+ margin:20px 40px;
+  
+}
+.Right{
+  height:700px;
+  width:500px;
+  background-color: #9b9797;
+  margin:20px 40px;
+  
+}
 
 .open-button {
   background-color:rgb(216, 172, 28);
@@ -344,7 +383,6 @@ footer{
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
 } 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
