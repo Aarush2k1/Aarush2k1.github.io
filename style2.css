@@ -31,7 +31,7 @@ a{
 }
 .navRight {
   float: right;
-  margin-right: -25px;
+  margin-right: -20px;
 }
 
 .navRight a {
@@ -48,6 +48,7 @@ a:hover {
 }
 .dropbtn {
   height:65px;
+  width:100px;
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
@@ -61,18 +62,23 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color:#4CAF50;;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(177, 173, 173, 0.623);
+  z-index: 2;
 }
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px 16px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #c8c7c7}
+.dropdown-content a:hover {
+  background-color: #c8c7c7;
+  width:100px;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -126,18 +132,14 @@ header{
 
 }
 .Center{
-  background-color:rgb(187, 133, 133);
+  background-color:rgb(255, 255, 255);
   height:800px;
   width:700px;
   margin:0px 50px 50px 50px;
   padding:20px 40px;
   box-shadow: 10px 10px 5px grey;  
 }
-.Center li{
-  list-style: none;
-  font-size: 28px;
-  padding-bottom:20px;
-}
+
 .Center p{
   font-size:25px;
 }
@@ -241,7 +243,7 @@ footer{
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+
 }
  
 .footer-distributed .footer-left,
